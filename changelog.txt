@@ -1,0 +1,11 @@
+1.0.0
+- Modern CMake/Qt rewrite of XVolkolak (the classic XVLK emulator-unpacker).
+- GUI and console front ends over the XEmulUnpacker engine (XEmulator core).
+- Emulation-based OEP recovery: single-steps the packer stub and rebuilds the image.
+- Packer selection: "Generic (auto)" heuristic plus 21 packer-specific unpackers
+  (UPX, ASPack, NSPack, (Win)Upack, FSG, MEW, MPRESS, PECompact, ACProtect,
+  !EP(EXE Pack), PeX, AHPacker, BeRoEXEPacker, ExeFog, nPack, Fish PE Packer,
+  kkrunchy, Packman, QuickPack NT, Petite, REVProt).
+- GUI runs the unpack on a worker thread with a live engine log and progress.
+- Console: -r/--result-directory, -f/--force, -p/--packer, -m/--max-steps, -v/--verbose,
+  --apilog, --list-packers.
