@@ -1,0 +1,9 @@
+[Desktop Entry]
+Version=@PROJECT_VERSION@
+Type=Application
+Name=XVolkolak
+Comment=XVolkolak emulator-unpacker
+Exec=xvolkolak
+Icon=xvolkolak
+Terminal=false
+Categories=Development;Utility;
