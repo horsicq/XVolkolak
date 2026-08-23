@@ -5,8 +5,8 @@ XVolkolak is a Qt/CMake emulator-unpacker project with two front ends:
 - `xvolkolak` - Qt Widgets GUI application.
 - `xvolkolakc` - console application.
 
-The core (`_mylibs/XUniversalUnpacker/emulatorunpacker.*`) drives the **XEmulUnpacker** engine
-(`_mylibs/XEmulUnpacker`, built on the XEmulator user-mode CPU emulator): it loads a
+The core (`dep/XUniversalUnpacker/emulatorunpacker.*`) drives the **XEmulUnpacker** engine
+(`dep/XEmulUnpacker`, built on the XEmulator user-mode CPU emulator): it loads a
 packed executable, single-steps the loader stub until the transfer to the original
 entry point (OEP), and writes the reconstructed image out. The packer can be left on
 `Generic (auto)` (heuristic OEP detection) or set to one of 21 packer-specific
@@ -15,6 +15,12 @@ unpackers (UPX, ASPack, NSPack, (Win)Upack, FSG, MEW, MPRESS, PECompact, ACProte
 Packman, QuickPack NT, Petite, REVProt). Run `xvolkolakc --list-packers` to enumerate.
 
 ## Build
+
+The dependencies live in `dep/` as git submodules, so clone recursively:
+
+```bash
+git clone https://github.com/horsicq/XVolkolak.git --recursive
+```
 
 ```bat
 cmake -S . -B tmp_build -DCMAKE_PREFIX_PATH=C:\Qt\5.15.2\msvc2019_64
