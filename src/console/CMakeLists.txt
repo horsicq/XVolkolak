@@ -1,5 +1,5 @@
 set(CMAKE_AUTOMOC ON)
-set(CMAKE_CXX_STANDARD 17)  # match xuniversalunpacker (engine is built at C++17)
+set(CMAKE_CXX_STANDARD 11)  # match xuniversalunpacker (engine is built at C++17)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 set(CMAKE_CXX_EXTENSIONS OFF)
 
