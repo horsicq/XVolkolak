@@ -58,3 +58,6 @@
 [submodule "dep/XUniversalUnpacker"]
 	path = dep/XUniversalUnpacker
 	url = https://github.com/horsicq/XUniversalUnpacker
+[submodule "dep/Detect-It-Easy"]
+	path = dep/Detect-It-Easy
+	url = https://github.com/horsicq/Detect-It-Easy.git
